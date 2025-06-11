@@ -1,0 +1,44 @@
+[
+  {
+    "name": "Tomato Soup",
+    "description": "Warm and creamy tomato soup with herbs.",
+    "price": 5.50,
+    "image": "https://via.placeholder.com/200",
+    "category": "starters"
+  },
+  {
+    "name": "Bruschetta",
+    "description": "Grilled bread topped with tomato and basil.",
+    "price": 6.00,
+    "image": "https://via.placeholder.com/200",
+    "category": "starters"
+  },
+  {
+    "name": "Spaghetti Bolognese",
+    "description": "Classic Italian pasta with rich meat sauce.",
+    "price": 12.99,
+    "image": "https://via.placeholder.com/200",
+    "category": "mains"
+  },
+  {
+    "name": "Butter Chicken Curry",
+    "description": "Creamy curry served with basmati rice.",
+    "price": 13.75,
+    "image": "https://via.placeholder.com/200",
+    "category": "mains"
+  },
+  {
+    "name": "Chocolate Lava Cake",
+    "description": "Warm, gooey chocolate cake with molten center.",
+    "price": 6.50,
+    "image": "https://via.placeholder.com/200",
+    "category": "desserts"
+  },
+  {
+    "name": "Vanilla Ice Cream",
+    "description": "Creamy vanilla ice cream with caramel drizzle.",
+    "price": 4.25,
+    "image": "https://via.placeholder.com/200",
+    "category": "desserts"
+  }
+]
