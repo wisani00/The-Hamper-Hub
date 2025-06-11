@@ -1,0 +1,523 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Segoe UI', sans-serif;
+  line-height: 1.6;
+  color: #333;
+}
+
+.container {
+  width: 90%;
+  max-width: 1100px;
+  margin: auto;
+  border-radius: 100%
+}
+
+header {
+  background: #444140;
+  color: #fff;
+  padding: 20px 0;
+}
+
+header h1 {
+  display: inline;
+}
+
+nav {
+  float: right;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-left: 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.hero {
+  background: url(#)no-repeat center center/cover;
+  color: #fff;
+  padding: 100px 0;
+  text-align: center;
+}
+
+.hero .btn {
+  background: #2a2424;
+  color: #f1f1f1;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+.menu {
+  padding: 50px 0;
+  background: #f4f4f4;
+  text-align: center;
+}
+
+.menu h2 {
+  margin-bottom: 30px;
+  font-size: 2em;
+}
+
+.menu-items {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.item {
+  background: #fff;
+  padding: 20px;
+  margin: 10px;
+  width: 280px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.item img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.burger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+.burger {
+  display: none;
+  font-size: 28px;
+  cursor: pointer;
+}
+
+/* Add media query for smaller screens */
+@media (max-width: 768px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+  nav ul.show {
+    display: flex;
+  }
+  .burger {
+    display: block;
+  }
+}
+.theme-toggle {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  padding: 10px;
+  border: none;
+  background: #333;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+.cart-count {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background: #363232;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: bold;
+  z-index: 1000;
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeIn 0.8s forwards;
+}
+
+@keyframes fadeIn {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+    
+}
+#cartItems .item {
+  background: #fff;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#cartItems .item p {
+  margin: 0 10px;
+  flex: 1;
+}
+
+#totalPrice {
+  margin-top: 20px;
+  font-size: 1.4em;
+}
+
+#Clear Cart { background: #fff;
+  margin-bottom: 20px;
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form#checkoutForm {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+#checkoutForm input {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.category-title {
+  font-size: 1.6em;
+  margin: 40px 0 20px;
+  color: #6d6766;
+  border-bottom: 2px solid #eee;
+  padding-bottom: 5px;
+}
+
+.menu-filter {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  background-color: #ddd;
+  border: none;
+  padding: 10px 20px;
+  margin: 0 5px;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  transition: background 0.3s;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background-color: #ff6347;
+  color: white;
+}
+
+.category {
+  display: none;
+  animation: fadeIn 0.3s ease-in-out;
+}  
+
+.category.show {
+  display: block;
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+.menu-controls {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+#searchInput, #sortSelect {
+  padding: 10px;
+  font-size: 1rem;
+  flex: 1;
+  min-width: 200px;
+}
+
+.about {
+  padding: 60px 20px;
+  background-color: var(#fff);
+  color: var(#333);
+  line-height: 1.8;
+}
+
+.about h2 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+.about p {
+  max-width: 800px;
+  margin-bottom: 20px;
+}
+
+
+/* Contact Page Styling */
+/* Additional Contact Form Styling */
+.contact-container {
+    max-width: 800px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.contact-container h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    color: #798763;
+}
+
+.contact-container p {
+    font-size: 18px;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.contact-container .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.contact-container .form-group label {
+    font-size: 16px;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #333;
+}
+
+.contact-container .form-group input,
+.contact-container .form-group textarea {
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.contact-container .form-group textarea {
+    resize: vertical; /* Makes textarea resizable */
+}
+
+.contact-container .form-group input:focus,
+.contact-container .form-group textarea:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+.contact-container .btn-submit {
+    background-color: #007bff;
+    color: white;
+    padding: 12px 20px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.contact-container .btn-submit:hover {
+    background-color: #0056b3;
+}
+
+/* Map Styling */
+.map-container {
+    text-align: center;
+    margin-top: 40px;
+}
+
+.map-container iframe {
+    border-radius: 8px;
+}
+
+/* Mobile-friendly Styles */
+@media (max-width: 768px) {
+    .contact-container {
+        padding: 15px;
+    }
+
+    .contact-container h2 {
+        font-size: 28px;
+    }
+
+    .contact-container p {
+        font-size: 16px;
+    }
+}
+
+.rating {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.star {
+  font-size: 2rem;
+  color: #ccc;
+  transition: color 0.2s;
+}
+
+.star:hover,
+.star.hovered,
+.star.selected {
+  color: gold;
+}
+
+.review-form {
+  max-width: 500px;
+  margin-bottom: 20px;
+}
+
+textarea {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  padding: 10px;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  font-size: 1rem;
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+#reviews-list {
+  max-width: 500px;
+  margin-top: 20px;
+}
+
+.review {
+  border-bottom: 1px solid #ddd;
+  padding: 10px 0;
+}
+
+.review .stars {
+  color: gold;
+}
+
+.testimonials {
+  margin-top: 40px;
+}
+
+.testimonial {
+  background: #f9f9f9;
+  padding: 15px 20px;
+  border-left: 5px solid #007BFF;
+  margin-bottom: 20px;
+  border-radius: 5px;
+}
+
+.about-text ul {
+  list-style: none;
+  padding: 0;
+}
+
+.about-text ul li {
+  margin: 8px 0;
+  padding-left: 1.2em;
+  position: relative;
+}
+
+.about-text ul li::before {
+  content: '✔️';
+  position: absolute;
+  left: 0;
+  color: #28a745;
+}
+
+      
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #b9b9b9;
+      padding: 20px;
+    }
+
+    .order-form {
+      background-color: #ffffff;
+      padding: 30px;
+      max-width: 500px;
+      margin: 0 auto;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+
+    .order-form h2 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .form-group {
+      margin-bottom: 15px;
+    }
+
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+
+    .form-group input, 
+    .form-group select {
+      width: 100%;
+      padding: 8px;
+      box-sizing: border-box;
+    }
+
+    .form-group button {
+      background-color: #4CAF50;
+      color: white;
+      border: none;
+      padding: 10px 15px;
+      cursor: pointer;
+      width: 100%;
+      font-size: 16px;
+      border-radius: 5px;
+    }
+
+    .form-group button:hover {
+      background-color: #45a049;
+    }
+  
