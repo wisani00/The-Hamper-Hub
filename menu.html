@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Menu | DelishBites</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+    <div class="menu-controls">
+  <input type="text" id="searchInput" placeholder="Search dishes..." />
+  <select id="sortSelect">
+    <option value="">Sort by</option>
+    <option value="name-asc">Name ↑</option>
+    <option value="name-desc">Name ↓</option>
+    <option value="price-asc">Price ↑</option>
+    <option value="price-desc">Price ↓</option>
+  </select>
+</div>
+    
+    <div id="cartCount" class="cart-count">🛒 Cart: 0</div>
+  <header>
+    <div class="container">
+      <h1>The Hamper Hub</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="menu.html">Menu</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+<section class="menu">
+  <div class="container">
+    <h2>Our Full Menu</h2>
+
+    <!-- Starters -->
+    <h3 class="category-title">Starters</h3>
+    <div class="menu-items">
+      <div class="item">
+        <img src="image/hamper%201.jpg" alt="hamper 1">
+        <h3>hamper 1</h3>
+        <p>Warm and creamy tomato soup with herbs.</p>
+        <p class="price">R300.00</p>
+        <h2>Leave a Review</h2>
+<div class="review-form">
+  <div class="rating">
+    <span class="star" data-value="5">&#9733;</span>
+    <span class="star" data-value="4">&#9733;</span>
+    <span class="star" data-value="3">&#9733;</span>
+    <span class="star" data-value="2">&#9733;</span>
+    <span class="star" data-value="1">&#9733;</span>
+  </div>
+  <textarea id="review-text" placeholder="Write your review..."></textarea>
+  <button id="submit-review">Submit Review</button>
+</div>
+
+<h3>Customer Reviews</h3>
+<div id="reviews-list"></div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="image/hamper%202.jpg" alt="hamper 2">
+        <h3>hamper 2</h3>
+        <p>Grilled bread topped with tomato and basil.</p>
+        <p class="price">R400.00</p>
+        <h2>Leave a Review</h2>
+<div class="review-form">
+  <div class="rating">
+    <span class="star" data-value="5">&#9733;</span>
+    <span class="star" data-value="4">&#9733;</span>
+    <span class="star" data-value="3">&#9733;</span>
+    <span class="star" data-value="2">&#9733;</span>
+    <span class="star" data-value="1">&#9733;</span>
+  </div>
+  <textarea id="review-text" placeholder="Write your review..."></textarea>
+  <button id="submit-review">Submit Review</button>
+</div>
+
+<h3>Customer Reviews</h3>
+<div id="reviews-list"></div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Mains -->
+      <div class="menu-filter">
+  <button class="filter-btn active" data-category="all">All</button>
+  <button class="filter-btn" data-category="starters">Starters</button>
+  <button class="filter-btn" data-category="mains">Mains</button>
+  <button class="filter-btn" data-category="desserts">Snacks</button>
+</div>
+
+      <div class="category" data-category="starters">
+  <h3 class="category-title">Starters</h3>
+  <div class="menu-items">
+    <!-- Items go here -->
+  </div>
+</div>
+
+<div class="category" data-category="mains">
+  <h3 class="category-title">Mains</h3>
+  <div class="menu-items">
+    <!-- Items go here -->
+  </div>
+</div>
+
+<div class="category" data-category="snacks">
+  <h3 class="category-title">Snacks</h3>
+  <div class="menu-items">
+    <!-- Items go here -->
+  </div>
+</div>
+
+    <h3 class="category-title">Mains</h3>
+    <div class="menu-items">
+      <div class="item">
+        <img src="image/spaghetti.jpg" alt="Spaghetti">
+        <h3>Spaghetti Bolognese</h3>
+        <p>Classic Italian pasta with rich meat sauce.</p>
+        <p class="price">R79.99</p>
+        <h2>Leave a Review</h2>
+<div class="review-form">
+  <div class="rating">
+    <span class="star" data-value="5">&#9733;</span>
+    <span class="star" data-value="4">&#9733;</span>
+    <span class="star" data-value="3">&#9733;</span>
+    <span class="star" data-value="2">&#9733;</span>
+    <span class="star" data-value="1">&#9733;</span>
+  </div>
+  <textarea id="review-text" placeholder="Write your review..."></textarea>
+  <button id="submit-review">Submit Review</button>
+</div>
+
+<h3>Customer Reviews</h3>
+<div id="reviews-list"></div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="image/chocolate.jpg" alt="chocolate">
+        <h3>chocolate hamper</h3>
+        <p>Fresh rolls with salmon, tuna, and avocado.</p>
+        <p class="price">R190.00</p>
+        <h2>Leave a Review</h2>
+<div class="review-form">
+  <div class="rating">
+    <span class="star" data-value="5">&#9733;</span>
+    <span class="star" data-value="4">&#9733;</span>
+    <span class="star" data-value="3">&#9733;</span>
+    <span class="star" data-value="2">&#9733;</span>
+    <span class="star" data-value="1">&#9733;</span>
+  </div>
+  <textarea id="review-text" placeholder="Write your review..."></textarea>
+  <button id="submit-review">Submit Review</button>
+</div>
+
+<h3>Customer Reviews</h3>
+<div id="reviews-list"></div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="image/chicken.jpg" alt="Curry">
+        <h3>Butter Chicken Curry</h3>
+        <p>Creamy curry served with basmati rice.</p>
+        <p class="price">R13.75</p>
+        <h2>Leave a Review</h2>
+<div class="review-form">
+  <div class="rating">
+    <span class="star" data-value="5">&#9733;</span>
+    <span class="star" data-value="4">&#9733;</span>
+    <span class="star" data-value="3">&#9733;</span>
+    <span class="star" data-value="2">&#9733;</span>
+    <span class="star" data-value="1">&#9733;</span>
+  </div>
+  <textarea id="review-text" placeholder="Write your review..."></textarea>
+  <button id="submit-review">Submit Review</button>
+</div>
+
+<h3>Customer Reviews</h3>
+<div id="reviews-list"></div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+    <!-- Desserts -->
+    <h3 class="category-title">Chocolates</h3>
+    <div class="menu-items">
+      <div class="item">
+        <img src="image/cake.jpg" alt="chocolates">
+        <h3>Chocolate Lava Cake</h3>
+        <p>Warm, gooey chocolate cake with molten center.</p>
+        <p class="price">R120.00</p>
+        <h2>Leave a Review</h2>
+<div class="review-form">
+  <div class="rating">
+    <span class="star" data-value="5">&#9733;</span>
+    <span class="star" data-value="4">&#9733;</span>
+    <span class="star" data-value="3">&#9733;</span>
+    <span class="star" data-value="2">&#9733;</span>
+    <span class="star" data-value="1">&#9733;</span>
+  </div>
+  <textarea id="review-text" placeholder="Write your review..."></textarea>
+  <button id="submit-review">Submit Review</button>
+</div>
+
+<h3>Customer Reviews</h3>
+<div id="reviews-list"></div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+
+      <div class="item">
+        <img src="image/chocolate.jpg" alt="Ice Cream">
+        <h3>Vanilla Ice Cream</h3>
+        <p>Creamy vanilla ice cream with caramel drizzle.</p>
+        <p class="price">R14.25</p>
+        <h2>Leave a Review</h2>
+<div class="review-form">
+  <div class="rating">
+    <span class="star" data-value="5">&#9733;</span>
+    <span class="star" data-value="4">&#9733;</span>
+    <span class="star" data-value="3">&#9733;</span>
+    <span class="star" data-value="2">&#9733;</span>
+    <span class="star" data-value="1">&#9733;</span>
+  </div>
+  <textarea id="review-text" placeholder="Write your review..."></textarea>
+  <button id="submit-review">Submit Review</button>
+</div>
+
+<h3>Customer Reviews</h3>
+<div id="reviews-list"></div>
+
+        <button class="add-to-cart">Add to Cart</button>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+  <script src="script.js"></script>
+</body>
+</html>
